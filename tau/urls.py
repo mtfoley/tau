@@ -2,7 +2,7 @@ from django.conf import settings
 from django.urls import path, re_path, include, reverse_lazy
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.views.generic.base import RedirectView
+from django.views.generic.base import RedirectView, TemplateView
 
 from rest_framework.routers import DefaultRouter
 from rest_framework.authtoken import views
@@ -51,6 +51,7 @@ urlpatterns = [
     path('twitch-callback/', process_twitch_callback_view),
     path('first-run/', first_run_view),
     path('streamers/', streamer_page_view),
+    path('hello-webpack/', TemplateView.as_view(template_name='hello_webpack.html')),
     path('', home_view),
 
     # the 'api-root' from django rest-frameworks default router

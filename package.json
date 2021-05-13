@@ -1,0 +1,45 @@
+{
+  "name": "tau",
+  "version": "1.0.0",
+  "description": "Twitch API Unifier",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "npm test",
+    "dev": "webpack --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtfoley/tau.git"
+  },
+  "keywords": [
+    "twitch",
+    "streaming",
+    "api",
+    "websockets",
+    "webhooks"
+  ],
+  "author": "FiniteSingularity",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mtfoley/tau/issues"
+  },
+  "homepage": "https://github.com/mtfoley/tau#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
+    "vue-loader": "^15.9.7",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "uninstall": "0.0.0",
+    "vue": "^2.6.12"
+  }
+}
