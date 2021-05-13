@@ -7,6 +7,11 @@ module.exports = {
     filename: 'index-bundle.js',  // output bundle file name
     path: path.resolve(__dirname, './static'),  // path to our Django static directory
   },
+  resolve: {
+    alias: {
+      'vue$':'vue/dist/vue.esm.js'
+    }
+  },
   module: {
     rules: [
         {
@@ -21,7 +26,10 @@ module.exports = {
         },
         {
             test: /\.css$/,
-            loader: 'css-loader'
+            use: [
+              'vue-style-loader',
+              'css-loader'
+            ]
         }
     ]
   },
