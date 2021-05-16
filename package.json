@@ -1,0 +1,24 @@
+{
+  "name": "tau",
+  "version": "1.0.0",
+  "description": "twitch api unifier",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd tau-ui && ng build --output-path ../tau/templates/static/ng --output-hashing none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FiniteSingularity/tau.git"
+  },
+  "author": "FiniteSingularity",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FiniteSingularity/tau/issues"
+  },
+  "homepage": "https://github.com/FiniteSingularity/tau#readme"
+}

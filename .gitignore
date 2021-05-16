@@ -111,3 +111,6 @@ venv.bak/
 /db/data/db.sqlite3
 
 supervisord.pid
+
+node_modules/
+node_modules/**/node_modules/
